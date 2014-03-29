@@ -1,0 +1,54 @@
+/* 
+    Created on : Mar 27, 2014, 5:11:53 AM
+    Author     : Angreh (phillo.com.br)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    outline: none;
+}
+body, html {
+    background-color: #cee6e8;
+    color: #fff;
+    font-size: 13px;
+}
+body, html, #full_wrapper {
+    height: 100%;
+    width: 100%;
+}
+#login_panel {
+    position:absolute;
+    width:300px;
+    z-index:15;
+    top:50%;
+    left:50%;
+    margin:-140px 0 0 -150px;
+    padding: 30px 30px 40px 30px;
+    background: #30bfcf;
+}
+.input_text {
+    margin-top: 5px;
+    border: none;
+    padding: 5px;
+    width: 288px;
+}
+#forgot {
+    float: right;
+}
+#forgot a {
+    color: #0d7985;
+    text-decoration: none;
+}
+#button_loginDiv {
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 2px;
+}
+.login_button {
+    width: 125px;
+    height: 36px;
+    background-image: url(/statics/admin/images/login_button.png);
+    border: none;
+    cursor: pointer;
+}

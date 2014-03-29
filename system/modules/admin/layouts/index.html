@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!-- Estilos -->
+        <link type="text/css" rel="stylesheet" href="/statics/admin/styles/index.css" />
+        <script src="/statics/admin/scripts/jquery1.8.js" type="text/javascript"></script>
+        <script src="/statics/admin/scripts/hashchange.js" type="text/javascript"></script>
+        <script src="/statics/admin/scripts/mascara.js" type="text/javascript"></script>
+        <script src="/statics/admin/scripts/index.js" type="text/javascript"></script>
+
+        <title>Admin</title>
+    </head>
+    <body>
+        <div id="maincontainer">
+            <div id="contentwrapper">
+                <div id="contentcolumn">
+                    <div id="rightTitle_div">
+                        <a href="/admin/login/logout">logout</a>
+                    </div>
+                    <div id="innertube">{CONTENT}</div>
+                    
+                </div>
+            </div>
+
+            <div id="leftcolumn">
+                <div id="leftTitle_div">
+                    &nbsp;
+                </div><!-- title_div -->
+                <div id="menus">
+                    <div class="menuButton">
+                        <div class="menuSection menuItem" page="#home/home">Painel Geral</div>
+                    </div>
+                    <div class="menuButton">
+                        <div class="menuSection menuItem" page="#agenda">Agenda</div>
+                        <div class="menuSubSection">
+                            <div class="subMenuItem menuItem" page="#agenda/eventos">Eventos</div>
+                            <div class="subMenuItem menuItem" page="#agenda/comentarios">Comentários</div>
+                        </div>
+                    </div>
+                    <div class="menuButton">
+                        <div class="menuSection">Loja</div>
+                    </div>
+                    <div class="menuButton">
+                        <div class="menuSection">Sair</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

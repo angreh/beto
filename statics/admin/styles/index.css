@@ -1,0 +1,66 @@
+/* 
+    Created on : Mar 24, 2014, 10:12:15 AM
+    Author     : Angreh (phillo.com.br)
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+html, body {
+    background-image: url(/statics/admin/images/bg.png);
+    background-repeat: repeat-y;
+}
+
+#leftcolumn{
+    position: relative;
+    float: left;
+    width: 200px; /*Width of left column*/
+    margin-left: -100%;
+    background-color: #30bfcf;
+    background-repeat: repeat-y;
+    background-image: url(/statics/admin/images/bg.png);
+}
+#leftTitle_div {
+    width: 100%;
+    height: 75px;
+    background-color: #3d3d3d;
+    color: #fff;
+}
+#contentwrapper{
+    float: left;
+    width: 100%;
+}
+#contentcolumn{
+    position: relative;
+    margin-left: 200px; /*Set left margin to LeftColumnWidth*/
+    background-color: #cee6e8;
+}
+#innertube {
+    padding: 25px;
+}
+#rightTitle_div{
+    width: 100%;
+    height: 75px;
+    background-color: #4e4e4e;
+    color: #fff;
+}
+#menus {
+    margin-top: 78px;
+}
+.menuSection {
+    height: 54px;
+    background-image: url(/statics/admin/images/menu_buttonBg.png);
+    margin-bottom: 1px;
+}
+.menuSection:hover {
+    background-image: url(/statics/admin/images/menu_buttonABg.png);
+}
+.menuSubSection {
+    display: none;
+}
