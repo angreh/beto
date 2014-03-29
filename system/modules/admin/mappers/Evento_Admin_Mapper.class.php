@@ -4,8 +4,7 @@ class Evento_Admin_Mapper extends DefaultMapper {
 
     public function get($options = array()) {
         $defaults = array(
-            'onlyAtivos' => TRUE,
-            'debug' => FALSE
+            'onlyAtivos' => TRUE
         );
         $options = (object) array_merge($defaults, $options);
 
@@ -17,8 +16,8 @@ class Evento_Admin_Mapper extends DefaultMapper {
         $optionsForParent = array(
             'condition' => $condition,
             'columns' => $columns,
-            'debug' => $options->debug
         );
+        $optionsForParent = array_merge($optionsForParent, (array) $options);
         return parent::get($optionsForParent);
     }
 

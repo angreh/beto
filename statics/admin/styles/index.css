@@ -20,7 +20,7 @@ html, body {
 #leftcolumn{
     position: relative;
     float: left;
-    width: 200px; /*Width of left column*/
+    width: 200px; /* Width of left column */
     margin-left: -100%;
     background-color: #30bfcf;
     background-repeat: repeat-y;

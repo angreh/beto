@@ -12,9 +12,26 @@
 <div id="content_inner">
     <div id="home_agenda">
         <img src="/statics/site/images/home_calendarTitle.png" alt="Agenda" />
+        <br />
+        <br />
         <!-- BEGIN EVENTOS_BLOCK -->
-        {DIA}
-        {MES}
+        <div class="home_agenda_evento">
+            <div class="home_date">
+                <div class="home_agenda_dia">
+                    {DIA}
+                </div>
+                <div class="home_agenda_mes">
+                    {MES}
+                </div>
+            </div>
+
+            <div class="home_event_text">
+                <span class="event_titulo">{NOME}</span> <br />
+                Horário: {HORARIO} <br />
+                Local: {LOCAL}
+            </div>
+            <br style="clear: both;" />
+        </div>
         <!-- END EVENTOS_BLOCK -->
     </div><!-- home_agenda -->
     <div id="home_about">
