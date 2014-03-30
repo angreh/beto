@@ -1,0 +1,98 @@
+/* 
+    Created on : Mar 30, 2014, 7:52:24 AM
+    Author     : Angreh
+*/
+@media screen and (min-width: 850px) and (max-width: 1149px) {
+    #header_inner {
+        position: relative;
+        width: 90%;
+        height: 112px;
+        margin: 0 auto;
+    }
+    /* content */
+    #content_inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #home_mention .sub_t { font-size: 18px; color: #c50000; margin-left: 400px; }
+    #home_agenda {
+        float: left;
+        width: 48%;
+        font-size: 14px;
+        padding-top: 50px;
+    }
+    .home_date {
+        float: left;
+        width: 40px;
+        position: relative;
+    }
+    .home_date2 {
+        display: none;
+    }
+    .home_event_text {
+        float: right;
+        width: 88%;
+    }
+    #home_about {
+        float: right;
+        width: 48%;
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 50px;
+    }
+    #footer {
+        background-color: #2d343e;
+        background-image: url(/statics/site/images/footer_bg.gif);
+        background-repeat: repeat-x;
+        height: 405px;
+    }
+    #footer_inner {
+        width: 90%;
+        margin: 0 auto; 
+        position: relative;
+    }
+    #footer_logo {
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    #footer_about {
+        position: absolute;
+        width: 394px;
+        top: 115px;
+        left: 0;
+        color: #8f97a3;
+        font-size: 12px;
+    }
+    #footer_tTitle {
+        position: absolute;
+        top: 72px;
+        right: 0;
+    }
+    #footer_tList {
+        position: absolute;
+        top: 118px;
+        right: 0;
+    }
+    #footer_tList .img_hid {
+        display: none;
+    }
+    #footer_copyright {
+        position: absolute;
+        top: 353px;
+        left: 0;
+        color: #8f97a3;
+    }
+    #footer_sociaMedia {
+        position: absolute;
+        top: 347px;
+        right: 0;
+    }
+    #footer_sociaMedia img {
+        margin-left: 15px;
+    }
+    .separatorImg {
+        width: 100%;
+        height: 1px;
+    }
+}
