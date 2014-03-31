@@ -128,12 +128,3 @@ body,html{ font-family: 'Roboto Light',Roboto, sans-serif, Helvetica, Arial;font
     padding-bottom: 25px;
     padding-right: 15px;
 }
-#tela_min, #tela_med, #tela_gra, #tela_gig { 
-    width: 100%;
-    padding: 2px;
-    border: #8f97a3 1px solid;
-    background-color: #ff9999;
-    text-align: center;
-    display: none;
-}
-
