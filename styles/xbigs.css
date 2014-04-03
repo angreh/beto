@@ -13,6 +13,7 @@
     #content_inner {
         width: 1100px;
         margin: 0 auto;
+        text-align: justify;
     }
     #home_mention .sub_t { font-size: 18px; color: #c50000; margin-left: 400px; }
     #home_agenda {

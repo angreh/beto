@@ -45,10 +45,15 @@ class Request {
 
     /**
      * guarda as variaveis da requisição
-     * 
      * @var array 
      */
     private $vars;
+
+    /**
+     * guarda as rotas de endereço
+     * @var array 
+     */
+    private $routes = array();
 
     /**
      * guarda o nome da classe do controller
@@ -76,17 +81,26 @@ class Request {
         $default = array(
             'defaultModule' => 'site',
             'defaultController' => 'home',
-            'defaultAction' => 'index'
+            'defaultAction' => 'index',
+            'routes' => FALSE
         );
 
         $options = (object) array_merge($default, $options);
+        
+        if($options->routes !== FALSE){
+            $this->routes = $options->routes;
+        }
 
         //Remove a primeira '/' do request
         $request = substr($_SERVER['REQUEST_URI'], 1);
-        $this->resquest = (string) $request;
+        if (isset($this->routes[$request])) {
+            $this->resquest = $this->routes[$request];
+        } else {
+            $this->resquest = (string) $request;
+        }
 
         //trasnforma em array
-        $request = explode('/', $request);
+        $request = explode('/', $this->resquest);
 
         //Define modulo
         if (isset($request[0]) && $request[0] != '') {
@@ -107,7 +121,7 @@ class Request {
 
         //define action
         if (isset($request[2])) {
-            if (strpos($request[2], '_') === false){
+            if (strpos($request[2], '_') === false) {
                 $this->action = $request[2];
             } else {
                 $actionArr = explode('_', $request[2]);
@@ -189,6 +203,14 @@ class Request {
      */
     public function getModule() {
         return $this->module;
+    }
+
+    /**
+     * DESUSO
+     * @param type $routes
+     */
+    public function setRoutes($routes) {
+        $this->routes = $routes;
     }
 
 }

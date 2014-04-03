@@ -46,12 +46,19 @@ class GrehFW {
         $helper->Database()->setConfig($db_config);
 
         /**
+         * Configura rotas de endereços
+         */
+        $routes = array(
+            'release' => 'site/home/release',
+        );
+
+        /**
          * Inicializa o Request
          * 
          * A classe request é responsável pelos nomes do modules, controllers,
          * actions, seus caminhos e os paramentros passados através dos endereços
          */
-        $helper->Request()->init();
+        $helper->Request()->init(array('routes' => $routes));
 
 
         // Instancia o controller e chama actions definidas pelo request
