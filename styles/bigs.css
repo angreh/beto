@@ -15,6 +15,14 @@
         margin: 0 auto;
         text-align: justify;
     }
+    #home_slider_inner {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+    #home_slider_inner img {
+        width: 100%;
+    }
     #home_mention .sub_t { font-size: 18px; color: #c50000; margin-left: 400px; }
     #home_agenda {
         float: left;
@@ -40,6 +48,13 @@
         font-size: 14px;
         line-height: 24px;
         padding-top: 50px;
+    }
+    .page_titlesInner {
+        width: 90%;
+        margin: 0 auto;
+        padding: 27px 0 27px 0;
+        font-size: 30px;
+        color: #fff;
     }
     #footer {
         background-color: #2d343e;

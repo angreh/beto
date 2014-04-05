@@ -43,9 +43,20 @@ body,html{ font-family: 'Roboto Light',Roboto, sans-serif, Helvetica, Arial;font
     position: absolute;
     right: 0;
     top: 50px;
+}
+#header_menu a {
+    display: block;
+    float: left;
+    text-decoration: none;
     text-transform: uppercase;
     color: #c50000;
     font-family: 'Roboto Regular', sans-serif, Helvetica, Arial;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 8px;
+}
+#header_menu a:hover {
+    color: #000;
 }
 #header_mobileMenu {
     display: none;
@@ -54,14 +65,41 @@ body,html{ font-family: 'Roboto Light',Roboto, sans-serif, Helvetica, Arial;font
 #home_slider {
     width: 100%;
     background-image: url(/images/slider_bg.jpg);
-    height: 511px;
+    background-position: center;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
 }
 #slider_sub {
     display: none;
-}
-#home_slider_inner {
-    width: 1100px;
-    margin: 0 auto;
 }
 #home_mention {
     width: 100%;
@@ -98,7 +136,28 @@ body,html{ font-family: 'Roboto Light',Roboto, sans-serif, Helvetica, Arial;font
     clear: both;
     margin-bottom: 15px;
 }
-
+/* release */
+.page_titles {
+    width: 100%;
+    background-color: #2d343e;
+    margin-bottom: 15px;
+}
+.page_titlesInner {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    font-size: 30px;
+    color: #fff;
+}
+#perfil_image {
+    float: right;
+    margin: 10px 0 30px 30px;
+}
+.titles {
+    font-family: 'Roboto Bold', sans-serif, Helvetica, Arial;
+    color: #000;
+    font-size: 20px;
+}
 .event_titulo {
     font-family: 'Roboto Regular', sans-serif, Helvetica, Arial;
     font-size: 18px;
@@ -113,6 +172,18 @@ body,html{ font-family: 'Roboto Light',Roboto, sans-serif, Helvetica, Arial;font
     width: 100%;
     text-align: center;
     padding: 43px 0 60px 0;
+}
+/* contato */
+.c_column {
+    float: left;
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+    min-width: 400px;
+}
+.c_columnInner {
+    width: 330px;
+    margin: 0 auto;
 }
 /* footer */
 

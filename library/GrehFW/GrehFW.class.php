@@ -50,6 +50,8 @@ class GrehFW {
          */
         $routes = array(
             'release' => 'site/home/release',
+            'fotos' => 'site/home/fotos',
+            'contato' => 'site/home/contato',
         );
 
         /**

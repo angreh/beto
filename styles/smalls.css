@@ -83,6 +83,45 @@
         line-height: 24px;
         padding-top: 50px;
     }
+    .page_titles {
+        width: 95%;
+        background-color: #e6e5e5;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .page_titlesInner {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        font-size: 18px;
+        color: #000;
+    }
+    #perfil_image {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    #perfil_image img {
+        width: 90%;
+        max-width: 300px;
+
+    }
+    /* contato */
+    .c_column {
+        float: none;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        min-width: 0px;
+    }
+    .c_columnInner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .c_columnInner .titles {
+        font-size: inherit;
+    }
     #footer {
         background-color: #2d343e;
         background-image: url(/statics/site/images/footer_bg.gif);
